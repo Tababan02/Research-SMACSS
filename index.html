@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Activity 50: Research SMACSS - Scalable and Modular Architecture for CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+            font-family: papyrus;
+        }
+        h2, h3 {
+            margin: 0;
+            color: #000000;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+      
+        a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            background: rgb(248, 187, 197);
+            padding: 20px;
+            border-bottom: 2px solid #007bff;
+        }
+        .main {
+            display: flex;
+            flex-direction: row;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 250px;
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px black;
+            color: #000000;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            background: #000000;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-left: 20px;
+        }
+        .button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            background-color: rgb(0, 0, 0);
+            color: pink;
+        }
+        .button-primary {
+            background: #007bff;
+            color: white;
+        }
+        .button-primary:hover {
+            background: #0056b3;
+        }
+        .card {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            background: rgb(255, 200, 209);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .is-active {
+            background: #007bff;
+            color: white;
+        }
+        .button:hover {
+            opacity: 0.8;
+        }
+        .theme-dark {
+            background: #343a40;
+            color: white;
+        }
+        .theme-light {
+            background: white;
+            color: #343a40;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Activity 50: Research SMACSS - Scalable and Modular Architecture for CSS</h1>
+    </header>
+    <div class="main">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <a href="#" class="button button-primary">Click Me</a>
+        </aside>
+        <section class="content">
+            <div class="card">
+                <h3>PYTHON</h3>
+                <p>Python has become a staple in data science, allowing data analysts and other professionals to 
+                    use the language to conduct complex statistical calculations, create data visualisations,
+                    build machine learning algorithms, manipulate and analyse data,
+                     and complete other data-related tasks</p>
+                <button class="button">Learn Now</button>
+                <button class="button">Practice Now</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
